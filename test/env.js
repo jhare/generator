@@ -380,6 +380,7 @@ describe('Environment', function () {
       assert.equal(this.env.namespace('generator-backbone///all.js'), 'backbone:all');
       assert.equal(this.env.namespace('generator-backbone/././all.js'), 'backbone:all');
       assert.equal(this.env.namespace('generator-backbone/generator-backbone/all.js'), 'backbone:all');
+      //assert.equal(this.env.namespace('generator-backbone/generator-generator-backbone/all.js'), 'generator-backbone:all');
     });
 
     it('works with Windows\' paths', function () {
